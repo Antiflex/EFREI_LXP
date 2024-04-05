@@ -1,0 +1,43 @@
+diff -ur Lib/site-packages/pip/_vendor/distlib/scripts.py Lib/site-packages/pip/_vendor/distlib/scripts.py
+--- Lib/site-packages/pip/_vendor/distlib/scripts.py	2021-03-05 12:30:22.428955100 -0600
++++ Lib/site-packages/pip/_vendor/distlib/scripts.py	2021-03-05 12:14:26.662218400 -0600
+@@ -176,6 +176,17 @@
+         if sys.platform.startswith('java'):  # pragma: no cover
+             executable = self._fix_jython_executable(executable)
+ 
++        # EJS @ ML: relativize this, because we don't want to refer to 
++        # the original installation directory.
++        rel_executable_path = os.path.relpath(executable, sysconfig.get_path('scripts'))
++        if rel_executable_path:  # e.g. "..\python.exe"\
++            if sys.platform == 'win32':
++              # See https://bitbucket.org/vinay.sajip/simple_launcher/src/master/README.rst
++              # and references to <launcher_dir> there.
++              executable = os.path.join('<launcher_dir>', rel_executable_path)
++            else:
++              executable = rel_executable_path
++
+         # Normalise case for Windows - COMMENTED OUT
+         # executable = os.path.normcase(executable)
+         # N.B. The normalising operation above has been commented out: See
+@@ -236,7 +247,11 @@
+         if not shebang.endswith(linesep):
+             shebang += linesep
+         if not use_launcher:
+-            script_bytes = shebang + script_bytes
++            # EJS @ ML: emit scripts that find Python relative to the script
++            script_bytes = b"""\
++#!/bin/sh
++"exec" "`dirname $0`/$$$" "$0" "$@"
++""".replace(b"$$$", shebang[2:].strip()) + script_bytes
+         else:  # pragma: no cover
+             if ext == 'py':
+                 launcher = self._get_launcher('t')
+@@ -249,6 +264,8 @@
+             script_bytes = launcher + shebang + zip_data
+         for name in names:
+             outname = os.path.join(self.target_dir, name)
++            ## EJS @ ML: confirmation for sanity checking
++            print("Writing script %s to invoke %s" % (os.path.split(outname)[1], shebang.decode('utf-8').strip()))
+             if use_launcher:  # pragma: no cover
+                 n, e = os.path.splitext(outname)
+                 if e.startswith('.py'):

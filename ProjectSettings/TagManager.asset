@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Object3DRenderer
+  - OriginEllipse
+  - ModelObject
+  - ManipulationController
+  - SessionFollow
+  - SessionWindow
+  - DocumentObject
+  - FeedbackController
+  - RoomLight
+  - SamplesInfoPanel
+  - AssetsManifest
+  - PassThroughObject
+  - QuestControllerRightLaser
+  - QuestControllerLeftLaser
+  - QuestControllerLeftMesh
+  - QuestControllerRightMesh
+  - PlacementParent
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - TriggerColliders
+  - Water
+  - UI
+  - Stencil Mask
+  - Stencil Vis
+  - 
+  - Loading
+  - Measure
+  - Displayed_Object
+  - CuttingPlane
+  - QR_Scan
+  - CutPlaneTarget
+  - Modal UI
+  - OnBoarding
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - MRTK Cursors
+  - Spatial Awareness
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: VuforiaVision
+    uniqueID: 1039933917
+    locked: 0
+  - name: Measure
+    uniqueID: 1983434081
+    locked: 0

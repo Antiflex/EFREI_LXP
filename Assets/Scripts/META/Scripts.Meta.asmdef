@@ -1,0 +1,23 @@
+{
+    "name": "Scripts.Meta",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:e6e14456027a6264593c7e3018030799"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_ANDROID || UNITY_EDITOR",
+        "!MAGICLEAP"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
