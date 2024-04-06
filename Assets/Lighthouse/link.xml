@@ -1,8 +1,0 @@
-<linker>
-    <assembly fullname="Microsoft.UI.Xaml.Markup" preserve="all"/>
-    <assembly fullname="Synergiz.Collaboration.Clients" preserve="all"/>
-    <assembly fullname="Synergiz.Collaboration.Clients.WebSockets" preserve="all"/>
-    <assembly fullname="Synergiz.Collaboration.Clients.WebSockets.Uwp" preserve="all"/>
-    <assembly fullname="Synergiz.Collaboration.Shared" preserve="all"/>
-    <assembly fullname="Synergiz.Collaboration.Shared.WebSockets" preserve="all"/>
-</linker>

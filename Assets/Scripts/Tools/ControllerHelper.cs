@@ -423,6 +423,20 @@ namespace Assets.Scripts.Tools
 			}
 		}
 #endif
+		public enum ControllerButtons
+		{
+			None,
+			Menu,
+			Trigger,
+			Bumper,
+			Touchpad,
+			A,
+			B,
+			X,
+			Y,
+			Joystick,
+			Any,
+		}
 		#endregion
 	}
 }
