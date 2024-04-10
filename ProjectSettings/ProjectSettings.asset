@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Synergiz
-  productName: Synergiz Harbor Player
+  productName: Alexandre.MRTK
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -141,6 +141,10 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 49db167b1763357469e948c136d47939, type: 2}
+  - {fileID: 11400000, guid: 65fe69edde8f1fe4d9f50498f9e183cf, type: 2}
+  - {fileID: 6182375245568519129, guid: bc9ba5d69e1a9f145991267a037c0c5c, type: 2}
+  - {fileID: 11400000, guid: ce2c92f53b527c74089fae69e7245f8c, type: 2}
+  - {fileID: 5128914462639586757, guid: 5e3b392739207ae42b85e7819afc949f, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 0
@@ -251,7 +255,7 @@ PlayerSettings:
   clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
   templatePackageId: com.unity.template.3d@4.2.8
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  useCustomMainManifest: 1
+  useCustomMainManifest: 0
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0
   useCustomLauncherGradleManifest: 0
@@ -263,8 +267,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: SynergizHarbor.keystore'
-  AndroidKeyaliasName: synergiz.harbor.meta.key
+  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeyaliasName: key_1
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -973,11 +977,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 996f5a61-ee5e-4327-9c3d-d94b35899216
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: EFREI_LXP
+  organizationId: unity_tff7dsnmwfqakq
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
